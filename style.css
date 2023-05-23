@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #3d9970;
+  color: white;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+section {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Plant Information */
+#plant-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#plant-search label {
+  margin-right: 10px;
+}
+
+#plant-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Gardening Tips */
+#tip-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#tip-search label {
+  margin-right: 10px;
+}
+
+#tip-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Plant Identification */
+#image-upload {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#image-upload label {
+  margin-right: 10px;
+}
+
+#identify-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Plant Collections */
+#collection-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#collection-search label {
+  margin-right: 10px;
+}
+
+#collection-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
